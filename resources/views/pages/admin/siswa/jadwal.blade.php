@@ -24,7 +24,7 @@
                             <tr>
                                 <th>Nama Mapel</th>
                                 <th>Nama Guru</th>
-                                <th>Kelas</th>
+                                <th>Tahun Ajaran</th>
                                 <th>Jurusan</th>
                                 <th>Ruang</th>
                                 <th>Hari</th>
@@ -34,7 +34,7 @@
                         </thead>
                         <tbody>
                             @foreach ($items as $item)
-                                @if (auth()->user()->siswa->kelas === $item->kelas)
+                                @if (auth()->user()->siswa->tahun === $item->tahun)
 
                                 @if (auth()->user()->siswa->jurusan === $item->jurusan)
                                     <tr>
@@ -46,7 +46,7 @@
                                                 {{$item->guru->nama}}
                                             @endif
                                         </td>
-                                        <td>{{$item->kelas}}</td>
+                                        <td>{{$item->tahun}}</td>
                                         <td>{{$item->jurusan}}</td>
                                         <td>
                                             @if ($item->ruang == null)

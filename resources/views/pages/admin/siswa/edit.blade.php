@@ -131,19 +131,17 @@
                 </div>
               </div>
               <div class="form-group">
-                <label for="kelas">Kelas</label>
+                <label for="tahun">Tahun Ajaran</label>
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
-                    <label class="input-group-text" for="kelas"><i class="fas fa-user-graduate"></i></label>
+                    <label class="input-group-text" for="tahun"><i class="fas fa-user-graduate"></i></label>
                   </div>
-                  <select class="custom-select" name="kelas">
+                  <select class="custom-select" name="tahun">
                     <option>-- Pilih --</option>
-                    <option value="1" @if($item->kelas == '1') selected @endif>1</option>
-                    <option value="2" @if($item->kelas == '2') selected @endif>2</option>
-                    <option value="3" @if($item->kelas == '3') selected @endif>3</option>
-                    <option value="4" @if($item->kelas == '4') selected @endif>4</option>
-                    <option value="5" @if($item->kelas == '5') selected @endif>5</option>
-                    <option value="6" @if($item->kelas == '6') selected @endif>6</option>
+                    <option value="2017" @if($item->tahun == '2017') selected @endif>2017</option>
+                    <option value="2018" @if($item->tahun == '2018') selected @endif>2018</option>
+                    <option value="2019" @if($item->tahun == '2019') selected @endif>2019</option>
+                    <option value="2020" @if($item->tahun == '2020') selected @endif>2020</option>
                   </select>
                 </div>
               </div>
@@ -155,8 +153,21 @@
                   </div>
                   <select class="custom-select" name="jurusan">
                     <option>-- Pilih --</option>
-                    <option value="AK 1" @if($item->jurusan == 'AK 1') selected @endif>AK 1</option>
-                    <option value="AK 2" @if($item->jurusan == 'AK 2') selected @endif>AK 2</option>
+                    <option value="AP 1" @if($item->jurusan == 'AP 1') selected @endif>AP 1</option>
+                    <option value="AP 2" @if($item->jurusan == 'AP 2') selected @endif>AP 2</option>
+                    <option value="JB 1" @if($item->jurusan == 'JB 1') selected @endif>JB 1</option>
+                    <option value="JB 2" @if($item->jurusan == 'JB 2') selected @endif>JB 2</option>
+                    <option value="MM 1" @if($item->jurusan == 'MM 1') selected @endif>MM 1</option>
+                    <option value="MM 2" @if($item->jurusan == 'MM 2') selected @endif>MM 2</option>
+                    <option value="MM 3" @if($item->jurusan == 'MM 3') selected @endif>MM 3</option>
+                    <option value="TGB 1" @if($item->jurusan == 'TGB 1') selected @endif>TGB 1</option>
+                    <option value="TGB 2" @if($item->jurusan == 'TGB 2') selected @endif>TGB 2</option>
+                    <option value="TKJ 1" @if($item->jurusan == 'TKJ 1') selected @endif>TKJ 1</option>
+                    <option value="TKJ 2" @if($item->jurusan == 'TKJ 2') selected @endif>TKJ 2</option>
+                    <option value="TKJ 3" @if($item->jurusan == 'TKJ 3') selected @endif>TKJ 3</option>
+                    <option value="TKR 1" @if($item->jurusan == 'TKR 1') selected @endif>TKR 1</option>
+                    <option value="TKR 2" @if($item->jurusan == 'TKR 2') selected @endif>TKR 2</option>
+                    <option value="TPM 1" @if($item->jurusan == 'TPM 1') selected @endif>TPM 1</option>
                   </select>
                 </div>
               </div>

@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Jadwalmapel extends Model
 {
     protected $fillable = [
-        'mapel_id', 'guru_id', 'ruang_id', 'kelas', 'jurusan', 'hari', 'jam_mulai', 'jam_selesai'
+        'mapel_id', 'guru_id', 'ruang_id', 'tahun', 'jurusan', 'hari', 'jam_mulai', 'jam_selesai'
     ];
 
     protected $hidden = [];

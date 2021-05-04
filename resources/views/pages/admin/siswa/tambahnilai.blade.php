@@ -56,7 +56,7 @@
                       </div>
                     </div>
                 </div>
-                <a href="/guru/nilaiProses/{{$item->kelas}}" class="btn btn-secondary btn-sm">Kembali</a>
+                <a href="/guru/nilaiProses/{{$item->tahun}}" class="btn btn-secondary btn-sm">Kembali</a>
             </div>
         </div>
 

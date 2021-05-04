@@ -22,7 +22,7 @@
                   <tr>
                     <th>NO</th>
                     <th>Nama</th>
-                    <th>Kelas</th>
+                    <th>Tahun Ajaran</th>
                     <th>Jurusan</th>
                     <th>Aksi</th>
                   </tr>
@@ -32,7 +32,7 @@
                     <tr>
                         <td>{{$loop->iteration}}</td>
                         <td>{{$pn->nama}}</td>
-                        <td>{{$pn->kelas}}</td>
+                        <td>{{$pn->tahun}}</td>
                         <td>{{$pn->jurusan}}</td>
                         <td>
                             <a href="/siswa/{{$pn->id}}/nilai" class="btn btn-sm btn-primary">

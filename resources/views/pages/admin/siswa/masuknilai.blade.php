@@ -9,24 +9,38 @@
     <div class="container-fluid">
 
         <!-- Page Heading -->
-        <h1 class="h3 mb-2 text-gray-800 mt-4 mb-4">Pilih Kelas</h1>
+        <h1 class="h3 mb-2 text-gray-800 mt-4 mb-4">Pilih Tahun Ajaran</h1>
 
 
         <!-- DataTales Example -->
         <div class="card shadow mb-4">
           <div class="card-body">
-            <label for="">Kelas</label>
-            <select class="form-control mb-3" id="kelas">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
+            <label for="">Tahun Ajaran</label>
+            <select class="form-control mb-3" id="tahun">
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
             </select>
             <label for="">Jurusan</label>
             <select class="form-control mb-3" id="jurusan">
-              <option value="AK 1">AK 1</option>
-              <option value="AK 2">AK 2</option>
+                <option value="AP 1">AP 1</option>
+                <option value="AP 2">AP 2</option>
+                <option value="JB 1">JB 1</option>
+                <option value="JB 2">JB 2</option>
+                <option value="MM 1">MM 1</option>
+                <option value="MM 2">MM 2</option>
+                <option value="MM 3">MM 3</option>
+                <option value="TGB 1">TGB 1</option>
+                <option value="TGB 2">TGB 2</option>
+                <option value="TKJ 1">TKJ 1</option>
+                <option value="TKJ 2">TKJ 2</option>
+                <option value="TKJ 3">TKJ 3</option>
+                <option value="TKR 1">TKR 1</option>
+                <option value="TKR 2">TKR 2</option>
+                <option value="TPM 1">TPM 1</option>
             </select>
-            <a href="" onclick="this.href='/guru/nilaiProses/'+ document.getElementById('kelas').value +'/'+document.getElementById('jurusan').value" class="btn btn-primary"><i class="fas fa-spinner mr-2"></i>Proses Nilai</a>
+            <a href="" onclick="this.href='/guru/nilaiProses/'+ document.getElementById('tahun').value +'/'+document.getElementById('jurusan').value" class="btn btn-primary"><i class="fas fa-spinner mr-2"></i>Proses Nilai</a>
 
             <!-- <a href="{{ url('guru/nilaiProses//')}}" class="btn btn-primary"><i class="fas fa-spinner mr-2"></i>Proses Nilai</a> -->
           </div>

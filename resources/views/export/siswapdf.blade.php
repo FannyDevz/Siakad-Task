@@ -22,7 +22,7 @@
                 <th>Jenis Kelamin</th>
                 <th>Agama</th>
                 <th>Alamat</th>
-                <th>Kelas</th>
+                <th>Tahun Ajaran</th>
                 <th>Jurusan</th>
             </tr>
         </thead>
@@ -35,7 +35,7 @@
                     <td>{{$s->jns_kelamin}}</td>
                     <td>{{$s->agama}}</td>
                     <td>{{$s->alamat}}</td>
-                    <td>{{$s->kelas}}</td>
+                    <td>{{$s->tahun}}</td>
                     <td>{{$s->jurusan}}</td>
                 </tr>
             @empty
@@ -80,7 +80,7 @@
                 <th>Agama</th>
                 <th>Alamat</th>
                 <th>Nama Ortu</th>
-                <th>Kelas</th>
+                <th>Tahun Ajaran</th>
                 <th>Asal Sekolah</th>
             </tr>
         </thead>
@@ -94,7 +94,7 @@
                     <td>{{$s->agama}}</td>
                     <td>{{$s->alamat}}</td>
                     <td>{{$s->nama_ortu}}</td>
-                    <td>{{$s->kelas}}</td>
+                    <td>{{$s->tahun}}</td>
                     <td>{{$s->asal_sklh}}</td>
                 </tr>
             @empty

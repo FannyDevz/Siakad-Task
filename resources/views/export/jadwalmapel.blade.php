@@ -18,7 +18,7 @@
             <tr>
                 <th>Nama Mapel</th>
                 <th>Nama Guru</th>
-                <th>Kelas</th>
+                <th>Tahun Ajaran</th>
                 <th>Jurusan</th>
                 <th>Ruang</th>
                 <th>Hari</th>
@@ -43,7 +43,7 @@
                             {{$j->guru->nama}}
                         @endif
                     </td>
-                    <td>{{$j->kelas}}</td>
+                    <td>{{$j->tahun}}</td>
 
                     <td>{{$j->jurusan}}</td>
                     <td>
@@ -85,7 +85,7 @@
             <tr>
                 <th>Nama Mapel</th>
                 <th>Nama Guru</th>
-                <th>Kelas</th>
+                <th>Tahun Ajaran</th>
                 <th>Ruang</th>
                 <th>Hari</th>
                 <th>Jam Mulai</th>
@@ -97,7 +97,7 @@
                 <tr>
                     <td>{{$j->mapel->nama_mapel}}</td>
                     <td>{{$j->guru->nama}}</td>
-                    <td>{{$j->kelas}}</td>
+                    <td>{{$j->tahun}}</td>
                     <td>{{$j->ruang->nama_ruang}}</td>
                     <td>{{$j->hari}}</td>
                     <td>{{$j->jam_mulai}}</td>

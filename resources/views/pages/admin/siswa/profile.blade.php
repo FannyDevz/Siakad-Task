@@ -49,6 +49,14 @@
                         <th>Asal Sekolah</th>
                         <td>{{auth()->user()->siswa->asal_sklh}}</td>
                     </tr>
+                    <tr>
+                        <th>Tahun Ajaran</th>
+                        <td>{{auth()->user()->siswa->tahun}}</td>
+                    </tr>
+                    <tr>
+                        <th>Jurusan</th>
+                        <td>{{auth()->user()->siswa->jurusan}}</td>
+                    </tr>
                 </table>
             </div>
         </div>

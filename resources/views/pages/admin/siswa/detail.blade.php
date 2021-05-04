@@ -49,8 +49,8 @@
                         <td>{{$item->nama_ortu}}</td>
                     </tr>
                     <tr>
-                        <th>Kelas</th>
-                        <td>{{$item->kelas}}</td>
+                        <th>Tahun Ajaran</th>
+                        <td>{{$item->tahun}}</td>
                     </tr>
                     <tr>
                         <th>Jurusan</th>

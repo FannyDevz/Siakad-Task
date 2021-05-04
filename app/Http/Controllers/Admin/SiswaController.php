@@ -147,7 +147,7 @@ class SiswaController extends Controller
             'agama' => $request->agama,
             'alamat' => $request->alamat,
             'nama_ortu' => $request->nama_ortu,
-            'kelas' => $request->kelas,
+            'tahun' => $request->tahun,
             'jurusan' => $request->jurusan,
             'asal_sklh' => $request->asal_sklh,
             'image' => $image

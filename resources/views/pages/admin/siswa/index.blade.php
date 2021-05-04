@@ -31,7 +31,7 @@
                     <th>No</th>
                     <th>Nisn</th>
                     <th>Nama</th>
-                    <th>Kelas</th>
+                    <th>Tahun Ajaran</th>
                     <th>Jurusan</th>
                     <th>Aksi</th>
                   </tr>
@@ -42,7 +42,7 @@
                       <td>{{$loop->iteration}}</td>
                       <td>{{$item->nisn}}</td>
                       <td>{{$item->nama}}</td>
-                      <td>{{$item->kelas}}</td>
+                      <td>{{$item->tahun}}</td>
                       <td>{{$item->jurusan}}</td>
                       <td>
                         <a href="/siswa/{{$item->id}}/show"" class="btn btn-circle btn-info btn-sm">

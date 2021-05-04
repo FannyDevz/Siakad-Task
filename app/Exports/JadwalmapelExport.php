@@ -40,7 +40,7 @@ class JadwalmapelExport implements FromCollection, WithMapping, WithHeadings
         return [
             $rmapel,
             $rguru,
-            $jadwalmapel->kelas,
+            $jadwalmapel->tahun,
             $jadwalmapel->jurusan,
             $rruang,
             $jadwalmapel->hari,
@@ -54,7 +54,7 @@ class JadwalmapelExport implements FromCollection, WithMapping, WithHeadings
         return [
             'Nama Mapel',
             'Nama Guru',
-            'Kelas',
+            'Tahun',
             'Jurusan',
             'Ruang',
             'Hari',

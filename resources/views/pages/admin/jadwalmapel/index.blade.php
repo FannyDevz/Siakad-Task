@@ -28,7 +28,7 @@
                     <th>No</th>
                     <th>Mapel</th>
                     <th>Guru</th>
-                    <th>Kelas</th>
+                    <th>Tahun Ajaran</th>
                     <th>Jurusan</th>
                     <th>Ruang</th>
                     <th>Hari</th>
@@ -43,7 +43,7 @@
                       <td>{{$loop->iteration}}</td>
                       <td>{{$item->mapel->nama_mapel}}</td>
                       <td>{{$item->guru->nama}}</td>
-                      <td>{{$item->kelas}}</td>
+                      <td>{{$item->tahun}}</td>
                       <td>{{$item->jurusan}}</td>
                       <td>{{$item->ruang->nama_ruang}}</td>
                       <td>{{$item->hari}}</td>

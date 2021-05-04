@@ -19,9 +19,9 @@ class NilaiController extends Controller
         return view('pages.admin.siswa.masuknilai');
     }
 
-    public function proses($kelas,$jurusan)
+    public function proses($tahun,$jurusan)
     {
-        $pnilai = Siswa::all()->whereBetween('kelas', [$kelas])
+        $pnilai = Siswa::all()->whereBetween('tahun', [$tahun])
         ->whereBetween('jurusan', [$jurusan]);
 
         return view('pages.admin.siswa.prosnilai', compact('pnilai'));

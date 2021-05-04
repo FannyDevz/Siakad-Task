@@ -59,16 +59,17 @@
                   </select>
                 </div>
                 <div class="form-group">
-                    <label for="kelas">Kelas</label>
+                    <label for="tahun">Tahun Ajaran</label>
                     <div class="input-group mb-3">
                       <div class="input-group-prepend">
-                        <label class="input-group-text" for="kelas"><i class="fas fa-user-graduate"></i></label>
+                        <label class="input-group-text" for="tahun"><i class="fas fa-user-graduate"></i></label>
                       </div>
-                      <select class="custom-select" name="kelas">
+                      <select class="custom-select" name="tahun">
                         <option>-- Pilih --</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
                       </select>
                     </div>
                   </div>
@@ -80,8 +81,21 @@
                         </div>
                     <select class="custom-select" name="jurusan">
                         <option>-- Pilih --</option>
-                        <option value="AK 1">AK 1</option>
-                        <option value="AK 2">AK 2</option>
+                        <option value="AP 1">AP 1</option>
+                        <option value="AP 2">AP 2</option>
+                        <option value="JB 1">JB 1</option>
+                        <option value="JB 2">JB 2</option>
+                        <option value="MM 1">MM 1</option>
+                        <option value="MM 2">MM 2</option>
+                        <option value="MM 3">MM 3</option>
+                        <option value="TGB 1">TGB 1</option>
+                        <option value="TGB 2">TGB 2</option>
+                        <option value="TKJ 1">TKJ 1</option>
+                        <option value="TKJ 2">TKJ 2</option>
+                        <option value="TKJ 3">TKJ 3</option>
+                        <option value="TKR 1">TKR 1</option>
+                        <option value="TKR 2">TKR 2</option>
+                        <option value="TPM 1">TPM 1</option>
                       </select>
                     </div>
                   </div>
