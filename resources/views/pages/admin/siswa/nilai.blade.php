@@ -15,7 +15,7 @@
         <!-- DataTales Example -->
         <div class="card shadow mb-4">
           <div class="card-body">
-            {{-- <a href="/siswa/cetaknilai" class="btn btn-success mb-3">Cetak Nilai</a> --}}
+             <a href="/siswa/cetaknilai" class="btn btn-success mb-3">Cetak Nilai</a>
             <div class="table-responsive">
               <table class="table table-bordered text-center table-striped" id="table" width="100%" cellspacing="0">
                 <thead>

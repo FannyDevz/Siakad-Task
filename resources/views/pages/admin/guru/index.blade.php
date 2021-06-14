@@ -10,11 +10,11 @@
 
         <!-- Page Heading -->
         <h1 class="h3 text-gray-800">Data Guru</h1>
-        
+
         <a href="/guru/exportexcel" class="btn btn-success btn-sm mb-3 px-3 py-2">Laporan Excel</a>
         <a href="/guru/exportpdf" class="btn btn-danger btn-sm mb-3 px-3 py-2">Laporan PDF</a>
-        
-        
+
+
         <!-- DataTales Example -->
         <div class="card shadow mb-4">
           <div class="card-body">
@@ -28,7 +28,7 @@
                   <tr>
                     <th>No</th>
                     <th>Nip</th>
-                    <th>Nama</th>
+                    <th >Nama</th>
                     <th>Aksi</th>
                   </tr>
                 </thead>
@@ -37,7 +37,7 @@
                     <tr>
                         <td>{{$loop->iteration}}</td>
                         <td>{{$item->nip}}</td>
-                        <td>{{$item->nama}}</td>
+                        <td align="left">{{$item->nama}}</td>
                         <td>
                             <a href="/guru/{{$item->id}}/show" class="btn btn-circle btn-info btn-sm">
                                 <i class="fa fa-eye"></i>

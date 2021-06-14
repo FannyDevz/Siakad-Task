@@ -42,7 +42,7 @@
                     <tr>
                       <td>{{$loop->iteration}}</td>
                       <td>{{$item->mapel->nama_mapel}}</td>
-                      <td>{{$item->guru->nama}}</td>
+                      <td align="left">{{$item->guru->nama}}</td>
                       <td>{{$item->tahun}}</td>
                       <td>{{$item->jurusan}}</td>
                       <td>{{$item->ruang->nama_ruang}}</td>

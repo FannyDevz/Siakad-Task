@@ -39,7 +39,7 @@
                                 @if (auth()->user()->siswa->jurusan === $item->jurusan)
                                     <tr>
                                         <td>{{$item->mapel->nama_mapel}}</td>
-                                        <td>
+                                        <td align="left">
                                             @if ($item->guru == null)
                                                 Guru Terhapus
                                             @else

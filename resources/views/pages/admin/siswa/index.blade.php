@@ -41,7 +41,7 @@
                     <tr>
                       <td>{{$loop->iteration}}</td>
                       <td>{{$item->nisn}}</td>
-                      <td>{{$item->nama}}</td>
+                      <td align="left">{{$item->nama}}</td>
                       <td>{{$item->tahun}}</td>
                       <td>{{$item->jurusan}}</td>
                       <td>

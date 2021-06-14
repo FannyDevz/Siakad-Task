@@ -12,13 +12,16 @@
             <div class="row">
                 <div class="col align-self-center">
                     @if (auth()->user()->role == 'admin')
+                    <b>
+                    Admin
+                    </b>
                     <h1 class="mb-3">
                     Sistem Informasi Akademik
                     @foreach ($items as $item)
                     </h1>
                     <p">
                     {{$item->nama}}
-                    </p>
+                    </>
                     <p">
                     {{$item->alamat}}
                     </p>
@@ -33,9 +36,9 @@
                     @if (auth()->user()->role == 'guru')
                         <h1 class="mb-3">
                             @if (auth()->user()->guru->jns_kelamin == 'L')
-                                Selamat Datang Bapak {{auth()->user()->name}}
+                                Selamat Datang Bapak Guru {{auth()->user()->name}}
                             @else
-                                Selamat Datang Ibu {{auth()->user()->name}}
+                                Selamat Datang Ibu Guru {{auth()->user()->name}}
                             @endif
                         </h1>
                         <p class="mb-5">
@@ -45,6 +48,9 @@
                         </p>
                     @endif
                     @if (auth()->user()->role == 'siswa')
+                        <b>
+                        Siswa
+                        </b>
                         <h1 class="mb-3">
                             Selamat Datang {{auth()->user()->name}}
                         </h1>

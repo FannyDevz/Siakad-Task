@@ -14,7 +14,7 @@
           <input type="search" class="form-control mr-sm2" placeholder="Search" aria-label="Search" name="cari">
           <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
         </form> --}}
-        
+
         <!-- DataTales Example -->
         <div class="card shadow mb-4">
           <div class="card-body">
@@ -37,7 +37,7 @@
                   @forelse ($items as $item)
                     <tr>
                         <td>{{$loop->iteration}}</td>
-                        <td>{{$item->name}}</td>
+                        <td align="left">{{$item->name}}</td>
                         <td>{{$item->username}}</td>
                         <td>{{$item->role}}</td>
                         <td>

@@ -10,7 +10,7 @@
 
         <!-- Page Heading -->
         <h1 class="h3 text-gray-800">Data Absen Siswa</h1>
-        
+
         <a href="{{route('absensiswa.cetakexcel')}}" class="btn btn-success btn-sm mb-3 px-3 py-2">Laporan Excel</a>
         <a href="{{route('absensiswa.cetakpdf')}}" class="btn btn-danger btn-sm mb-3 px-3 py-2">Laporan PDF</a>
 
@@ -32,7 +32,7 @@
                   @foreach ($items as $item)
                     <tr>
                       <td>{{$loop->iteration}}</td>
-                      <td>{{$item->user->name}}</td>
+                      <td align="left">{{$item->user->name}}</td>
                       <td>{{$item->tanggal}}</td>
                       <td>{{$item->time_in}}</td>
                       <td>{{$item->note}}</td>

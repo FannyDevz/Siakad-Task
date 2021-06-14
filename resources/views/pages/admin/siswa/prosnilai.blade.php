@@ -31,7 +31,7 @@
                   @foreach ($pnilai as $pn)
                     <tr>
                         <td>{{$loop->iteration}}</td>
-                        <td>{{$pn->nama}}</td>
+                        <td align="left">{{$pn->nama}}</td>
                         <td>{{$pn->tahun}}</td>
                         <td>{{$pn->jurusan}}</td>
                         <td>
