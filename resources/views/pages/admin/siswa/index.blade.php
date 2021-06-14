@@ -31,7 +31,7 @@
                     <th>No</th>
                     <th>Nisn</th>
                     <th>Nama</th>
-                    <th>Tahun Ajaran</th>
+                    <th>Angkatan</th>
                     <th>Jurusan</th>
                     <th>Aksi</th>
                   </tr>

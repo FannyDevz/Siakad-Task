@@ -131,7 +131,7 @@
                 </div>
               </div>
               <div class="form-group">
-                <label for="tahun">Tahun Ajaran</label>
+                <label for="tahun">Angkatan</label>
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
                     <label class="input-group-text" for="tahun"><i class="fas fa-user-graduate"></i></label>

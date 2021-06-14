@@ -9,13 +9,13 @@
     <div class="container-fluid">
 
         <!-- Page Heading -->
-        <h1 class="h3 mb-2 text-gray-800 mt-4 mb-4">Pilih Tahun Ajaran</h1>
+        <h1 class="h3 mb-2 text-gray-800 mt-4 mb-4">Pilih Angkatan</h1>
 
 
         <!-- DataTales Example -->
         <div class="card shadow mb-4">
           <div class="card-body">
-            <label for="">Tahun Ajaran</label>
+            <label for="">Angkatan</label>
             <select class="form-control mb-3" id="tahun">
                 <option value="2017">2017</option>
                 <option value="2018">2018</option>

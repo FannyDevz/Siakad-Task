@@ -50,7 +50,7 @@
                         <td>{{auth()->user()->siswa->asal_sklh}}</td>
                     </tr>
                     <tr>
-                        <th>Tahun Ajaran</th>
+                        <th>Angkatan</th>
                         <td>{{auth()->user()->siswa->tahun}}</td>
                     </tr>
                     <tr>

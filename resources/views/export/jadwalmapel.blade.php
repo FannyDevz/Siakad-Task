@@ -18,7 +18,7 @@
             <tr>
                 <th>Nama Mapel</th>
                 <th>Nama Guru</th>
-                <th>Tahun Ajaran</th>
+                <th>Angkatan</th>
                 <th>Jurusan</th>
                 <th>Ruang</th>
                 <th>Hari</th>
@@ -83,11 +83,11 @@
     <table class="table text-center">
         <thead>
             <tr>
+                <th>Hari</th>
                 <th>Nama Mapel</th>
                 <th>Nama Guru</th>
-                <th>Tahun Ajaran</th>
+                <th>Angkatan</th>
                 <th>Ruang</th>
-                <th>Hari</th>
                 <th>Jam Mulai</th>
                 <th>Jam Selesai</th>
             </tr>
@@ -95,11 +95,11 @@
         <tbody>
             @foreach ($jadwal as $j)
                 <tr>
+                    <td>{{$j->hari}}</td>
                     <td>{{$j->mapel->nama_mapel}}</td>
                     <td>{{$j->guru->nama}}</td>
                     <td>{{$j->tahun}}</td>
                     <td>{{$j->ruang->nama_ruang}}</td>
-                    <td>{{$j->hari}}</td>
                     <td>{{$j->jam_mulai}}</td>
                     <td>{{$j->jam_selesai}}</td>
                 </tr>

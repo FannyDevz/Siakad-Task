@@ -49,7 +49,7 @@
                         <td>{{$item->nama_ortu}}</td>
                     </tr>
                     <tr>
-                        <th>Tahun Ajaran</th>
+                        <th>Angkatan</th>
                         <td>{{$item->tahun}}</td>
                     </tr>
                     <tr>

@@ -26,7 +26,7 @@
                   <tr>
                     <th>Mapel</th>
                     <th>Nama</th>
-                    <th>Tahun Ajaran</th>
+                    <th>Angkatan</th>
                     <th>Jurusan</th>
                     <th>Ruang</th>
                     <th>Hari</th>
@@ -38,12 +38,12 @@
                   @foreach ($items as $item)
                     @if (auth()->user()->name === $item->guru->nama)
                       <tr>
+                        <td>{{$item->hari}}</td>
                         <td>{{$item->mapel->nama_mapel}}</td>
                         <td>{{$item->guru->nama}}</td>
                         <td>{{$item->tahun}}</td>
                         <td>{{$item->jurusan}}</td>
                         <td>{{$item->ruang->nama_ruang}}</td>
-                        <td>{{$item->hari}}</td>
                         <td>{{$item->jam_mulai}}</td>
                         <td>{{$item->jam_selesai}}</td>
                       </tr>
@@ -51,11 +51,11 @@
                   @endforeach
                   {{-- @forelse (auth()->user()->guru->mapel as $mapel)
                       <tr>
+                          <td>{{$mapel->pivot->hari}}</td>
                           <td>{{$loop->iteration}}</td>
                           <td>{{$mapel->nama_mapel}}</td>
                           <td>{{$mapel->pivot->tahun}}</td>
                           <td>{{$mapel->pivot->ruang}}</td>
-                          <td>{{$mapel->pivot->hari}}</td>
                           <td>{{$mapel->pivot->jam_mulai}}</td>
                           <td>{{$mapel->pivot->jam_selesai}}</td>
                       </tr>

@@ -264,6 +264,24 @@ class SiswaController extends Controller
     public function jadwal()
     {
         $items = Jadwalmapel::all();
+        // $selasa = Jadwalmapel::where(['hari' => "Selasa"]);
+        // $items = Jadwalmapel::where(['hari' => "Senin"])
+        // ->union($selasa)
+        // ->get();
+        // // $rabu = Jadwalmapel::where(['hari' => "Rabu"])
+        // // ->union($selasa);
+        // // $kamis = Jadwalmapel::where(['hari' => "Kamis"])
+        // // ->union($rabu);
+        // $jumat = Jadwalmapel::where(['hari' => "Jumat"]);
+        // // ->union($kamis);
+        // $items = Jadwalmapel::where(['hari' => "Sabtu"])
+        // ->union($jumat)
+        // ->get();
+
+        // $user_id = Auth::user()->id;
+        // $date = date("Y-m-d");
+        // $cek_absen = Absensiswa::where(['user_id' => $user_id, 'tanggal' => $date])
+        //                     ->get()
         return view('pages.admin.siswa.jadwal', compact('items'));
     }
 

@@ -26,12 +26,12 @@
                 <thead>
                   <tr>
                     <th>No</th>
+                    <th>Hari</th>
                     <th>Mapel</th>
                     <th>Guru</th>
-                    <th>Tahun Ajaran</th>
+                    <th>Angkatan</th>
                     <th>Jurusan</th>
                     <th>Ruang</th>
-                    <th>Hari</th>
                     <th>Jam Mulai</th>
                     <th>Jam Selesai</th>
                     <th>Aksi</th>
@@ -41,12 +41,12 @@
                   @foreach ($items as $item)
                     <tr>
                       <td>{{$loop->iteration}}</td>
+                      <td>{{$item->hari}}</td>
                       <td>{{$item->mapel->nama_mapel}}</td>
                       <td align="left">{{$item->guru->nama}}</td>
                       <td>{{$item->tahun}}</td>
                       <td>{{$item->jurusan}}</td>
                       <td>{{$item->ruang->nama_ruang}}</td>
-                      <td>{{$item->hari}}</td>
                       <td>{{$item->jam_mulai}}</td>
                       <td>{{$item->jam_selesai}}</td>
                       <td>
