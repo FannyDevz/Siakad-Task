@@ -79,7 +79,7 @@ class SiswaController extends Controller
 
         Siswa::create($data);
 
-        return redirect('/siswa')->with('status', 'Data Berhasil Ditambahkan');
+        return redirect('siswa')->with('status', 'Data Berhasil Ditambahkan');
     }
 
 

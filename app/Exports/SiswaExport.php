@@ -27,8 +27,8 @@ class SiswaExport implements FromCollection, WithMapping, WithHeadings
             $siswa->jns_kelamin,
             $siswa->agama,
             $siswa->alamat,
-            $siswa->nama_ortu,
             $siswa->tahun,
+            $siswa->nama_ortu,
             $siswa->jurusan,
         ];
     }
@@ -43,8 +43,8 @@ class SiswaExport implements FromCollection, WithMapping, WithHeadings
             'Jenis Kelamin',
             'Agama',
             'Alamat',
-            'Nama Ortu',
             'Tahun',
+            'Nama Ortu',
             'Jurusan',
         ];
     }

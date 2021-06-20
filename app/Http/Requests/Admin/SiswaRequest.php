@@ -32,7 +32,7 @@ class SiswaRequest extends FormRequest
             'agama' => 'required',
             'alamat' => 'required|min:5',
             'nama_ortu' => 'required',
-            'kelas' => 'required',
+            'tahun' => 'required',
             'jurusan' => 'required',
             'asal_sklh' => 'required',
             'image' => 'required|image|mimes:jpeg,png,jpg,giv,svg'

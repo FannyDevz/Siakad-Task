@@ -23,7 +23,7 @@ class CreateSiswasTable extends Migration
             $table->string('agama');
             $table->string('alamat');
             $table->string('nama_ortu');
-            $table->integer('kelas');
+            $table->string('tahun');
             $table->string('jurusan');
             $table->string('asal_sklh');
             $table->text('image')->nullable();
