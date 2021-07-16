@@ -67,7 +67,7 @@ class GuruController extends Controller
         $data['image'] = $request->file('image')->store(
             'assets/gallery', 'public'
         );
-        
+
         Guru::create($data);
 
         return redirect('guru')->with('status', 'Data Berhasil Ditambahkan');
@@ -180,12 +180,12 @@ class GuruController extends Controller
         return redirect('/guru')->with('status', 'Data Berhasil Dihapus');
     }
 
-    public function timeZone($location) 
+    public function timeZone($location)
     {
         return date_default_timezone_set($location);
     }
 
-    public function absen() 
+    public function absen()
     {
         $this->timeZone('Asia/Jakarta');
         $user_id = Auth::user()->id;
@@ -197,19 +197,25 @@ class GuruController extends Controller
             $info = array(
                 "status" => "Anda Belum Mengisi Absen Hari Ini",
                 "btnIn" => "",
-                "btnOut" => "disabled"
+                "btnOut" => "disabled",
+                "note" => "",
+                "keterangan" => ""
             );
         } elseif($cek_absen->time_out == NULL) {
             $info = array(
                 "status" => "Jangan Lupa Absen Keluar",
                 "btnIn" => "disabled",
-                "btnOut" => ""
+                "btnOut" => "",
+                "note" => "disabled",
+                "keterangan" => "disabled"
             );
         } else {
             $info = array(
                 "status" => "Absensi Hari Ini Telah Berakhir",
                 "btnIn" => "disabled",
-                "btnOut" => "disabled"
+                "btnOut" => "disabled",
+                "note" => "disabled",
+                "keterangan" => "disabled"
             );
         }
 
@@ -224,9 +230,10 @@ class GuruController extends Controller
         $date = date("Y-m-d");
         $time = date("H:i:s");
         $note = $request->note;
+        $keterangan = $request->keterangan;
 
         $absen = new Absen;
-        
+
         // Absen Masuk
         if (isset($request["btnIn"])) {
             // Cek Double Data
@@ -239,18 +246,17 @@ class GuruController extends Controller
                 'user_id' => $user_id,
                 'tanggal' => $date,
                 'time_in' => $time,
-                'note' => $note]);
-            return redirect()->back(); 
-        } 
+                'note' => $note,
+                'keterangan' => $keterangan]);
+            return redirect()->back();
+        }
         // Absen Keluar
         elseif (isset($request["btnOut"])) {
             $absen->where(['tanggal' => $date, 'user_id' => $user_id])
-                    ->update([
-                        'time_out' => $time,
-                        'note' => $note]);
+                    ->update(['time_out' => $time]);
             return redirect()->back();
         }
-        // return $request->all(); 
+        // return $request->all();
     }
 
     public function profile()
@@ -258,7 +264,7 @@ class GuruController extends Controller
         return view('pages.admin.guru.profile');
     }
 
-    public function exportExcel() 
+    public function exportExcel()
     {
         return Excel::download(new GuruExport, 'Guru.xlsx');
     }
@@ -268,7 +274,7 @@ class GuruController extends Controller
         $guru = Guru::all();
         $pdf = PDF::loadView('export.gurupdf',['guru' => $guru]);
         return $pdf->download('guru.pdf');
-    }   
+    }
 
     public function jadwal()
     {

@@ -29,7 +29,17 @@
                         <form action="/absen" method="POST">
                             {{ csrf_field() }}
                             <div class="form-group">
-                              <input type="text" class="form-control" name="note" placeholder="Catatan...">
+                                <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                        <label class="input-group-text" for="note"><i class="fas fa-address-card"></i></label>
+                                        </div>
+                                        <select class="custom-select" name="note"  {{$info['note']}}>
+                                        <option value="Hadir">Hadir</option>
+                                        <option value="Sakit">Sakit</option>
+                                        <option value="Izin">Izin</option>
+                                        </select>
+                                </div>
+                                <input {{$info['keterangan']}} type="text" class="form-control" name="keterangan" placeholder="Catatan...">
                             </div>
                             <button type="submit" class="btn btn-flat btn-primary" name="btnIn" {{$info['btnIn']}}>Absen Masuk</button>
                             <button type="submit" class="btn btn-flat btn-primary btnout float-right" name="btnOut" {{$info['btnOut']}}>Absen Keluar</button>
@@ -42,7 +52,17 @@
                             <tr>
                                 <td>
                                     <div class="form-group col-lg-12">
-                                        <input type="text" class="form-control" name="note" placeholder="Note...">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                            <label class="input-group-text" for="note"><i class="fas fa-address-card"></i></label>
+                                            </div>
+                                            <select class="custom-select" name="note">
+                                            <option value="Hadir">Hadir</option>
+                                            <option value="Sakit">Sakit</option>
+                                            <option value="Izin">Izin</option>
+                                            </select>
+                                        </div>
+                                        <input type="text" class="form-control" name="keterangan" placeholder="Catatan...">
                                     </div>
                                 </td>
                                 <td>
@@ -73,6 +93,7 @@
                                         <th>Jam Masuk</th>
                                         <th>Jam Keluar</th>
                                         <th>Catatan</th>
+                                        <th>Keterangan</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -82,6 +103,7 @@
                                             <td>{{$item->time_in}}</td>
                                             <td>{{$item->time_out}}</td>
                                             <td>{{$item->note}}</td>
+                                            <td>{{$item->keterangan}}</td>
                                         </tr>
                                     @endforeach
                                 </tbody>

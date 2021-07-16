@@ -108,11 +108,11 @@
           <i class="fas fa-book-reader"></i>
           <span>Jadwal</span></a>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link" href="/guru/nilai">
           <i class="fas fa-book-reader"></i>
           <span>Nilai</span></a>
-      </li>
+      </li> -->
       <li class="nav-item">
         <a class="nav-link" href="/guru/profile">
           <i class="fas fa-book-reader"></i>

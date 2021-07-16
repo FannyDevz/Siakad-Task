@@ -63,7 +63,7 @@ Route::prefix('/')
             Route::get('guru/{guru}/edit', 'GuruController@edit');
             Route::put('guru/{guru}/update', 'GuruController@update');
             Route::get('guru/{guru}/destroy', 'GuruController@destroy');
-            Route::post('guru/{guru}/nilai', 'GuruController@nilai');
+            // Route::post('guru/{guru}/nilai', 'GuruController@nilai');
             Route::get('guru/exportexcel', 'GuruController@exportExcel');
             Route::get('guru/exportpdf', 'GuruController@exportPdf');
 
@@ -145,13 +145,13 @@ Route::prefix('/')
             Route::get('guru/tugas', 'TugasController@tugas');
             Route::get('guru/absen', 'GuruController@absen');
             Route::post('absen', 'GuruController@absenpros');
-            Route::get('guru/nilai', 'NilaiController@index');
-            Route::get('guru/nilaiProses/{tahun}/{jurusan}', 'NilaiController@proses');
-            Route::get('siswa/{siswa}/nilai', 'NilaiController@detail');
-            Route::post('siswa/{siswa}/nilaitambah', 'NilaiController@nilai');
-            Route::get('/siswa/{id}/{idmapel}/nilaitambah', 'NilaiController@nilaitambah');
-            Route::get('/siswa/{id}/{idmapel}/hapus', 'NilaiController@nilaihapus');
-            Route::post('/siswa/{id}/nilaiupdate', 'NilaiController@nilaiupdate');
+            // Route::get('guru/nilai', 'NilaiController@index');
+            // Route::get('guru/nilaiProses/{tahun}/{jurusan}', 'NilaiController@proses');
+            // Route::get('siswa/{siswa}/nilai', 'NilaiController@detail');
+            // Route::post('siswa/{siswa}/nilaitambah', 'NilaiController@nilai');
+            // Route::get('/siswa/{id}/{idmapel}/nilaitambah', 'NilaiController@nilaitambah');
+            // Route::get('/siswa/{id}/{idmapel}/hapus', 'NilaiController@nilaihapus');
+            // Route::post('/siswa/{id}/nilaiupdate', 'NilaiController@nilaiupdate');
             // Route::post('guru/store', 'TugasController@store');
         });
     });

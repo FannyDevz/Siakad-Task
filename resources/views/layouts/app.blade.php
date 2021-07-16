@@ -31,7 +31,7 @@
                 <div class="navbar-nav ml-auto">
                     <a class="nav-item nav-link align-self-center mr-3" href="/home">Home</a>
                     <a class="nav-item nav-link align-self-center mr-3" href="/siswa/jadwal">Jadwal Mapel</a>
-                    <a class="nav-item nav-link align-self-center mr-3" href="/siswa/nilai">Nilai</a>
+                    <!-- <a class="nav-item nav-link align-self-center mr-3" href="/siswa/nilai">Nilai</a> -->
                     {{-- <a class="nav-item nav-link align-self-center mr-3" href="/siswa/tugas">Tugas</a> --}}
                     <a class="nav-item nav-link align-self-center mr-3" href="/siswa/profile">Profile</a>
                     <!-- <a class="nav-item nav-link align-self-center mr-3" href="{{route('upload.index')}}">Upload Pembayaran</a> -->

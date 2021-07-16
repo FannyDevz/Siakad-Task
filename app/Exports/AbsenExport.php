@@ -25,6 +25,7 @@ class AbsenExport implements FromCollection, WithMapping, WithHeadings
             $absen->time_in,
             $absen->time_out,
             $absen->note,
+            $absen->keterangan,
         ];
     }
 
@@ -36,6 +37,7 @@ class AbsenExport implements FromCollection, WithMapping, WithHeadings
             'Jam Masuk',
             'Jam Keluar',
             'Catatan',
+            'Keterangan',
         ];
     }
 }

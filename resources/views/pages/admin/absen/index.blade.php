@@ -27,6 +27,7 @@
                     <th>Jam Masuk</th>
                     <th>Jam Keluar</th>
                     <th>Catatan</th>
+                    <th>Keterangan</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -38,6 +39,7 @@
                       <td>{{$item->time_in}}</td>
                       <td>{{$item->time_out}}</td>
                       <td>{{$item->note}}</td>
+                      <td>{{$item->keterangan}}</td>
                     </tr>
                   @endforeach
                 </tbody>

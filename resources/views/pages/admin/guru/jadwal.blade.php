@@ -25,7 +25,6 @@
                 <thead>
                   <tr>
                     <th>Mapel</th>
-                    <th>Nama</th>
                     <th>Angkatan</th>
                     <th>Jurusan</th>
                     <th>Ruang</th>
@@ -38,12 +37,11 @@
                   @foreach ($items as $item)
                     @if (auth()->user()->name === $item->guru->nama)
                       <tr>
-                        <td>{{$item->hari}}</td>
                         <td>{{$item->mapel->nama_mapel}}</td>
-                        <td>{{$item->guru->nama}}</td>
                         <td>{{$item->tahun}}</td>
                         <td>{{$item->jurusan}}</td>
                         <td>{{$item->ruang->nama_ruang}}</td>
+                        <td>{{$item->hari}}</td>
                         <td>{{$item->jam_mulai}}</td>
                         <td>{{$item->jam_selesai}}</td>
                       </tr>

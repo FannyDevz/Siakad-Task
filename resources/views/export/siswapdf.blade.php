@@ -1,19 +1,36 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-    <title>Data Siswa</title>
-  </head>
-  <body>
-    {{-- <img src="{{url('foto/bunayya.png')}}" alt=""> --}}
-    <h3 class="text-center mb-3">Laporan Data Siswa SMK Bhakti Mulia Pare</h3>
-    <table class="table table-striped table-bordered text-center table-sm">
+<head>
+    <style>
+        table {
+        width:100%;
+        }
+        table, th, td {
+        border: 1px solid ;
+        border-collapse: collapse;
+        }
+        th, td {
+        padding: 10px;
+        text-align: left;
+        }
+        #t01 tr:nth-child(even) {
+        background-color: #eee;
+        font-size: 9pt;
+        }
+        #t01 tr:nth-child(odd) {
+        background-color: #fff;
+        font-size: 9pt;
+        }
+        #t01 th {
+        background-color: white;
+        color: black;
+        }
+    </style>
+</head>
+<body>
+    <h2 align="center">Laporan Data Siswa SMK Bhakti Mulia Pare</h2>
+    <br>
+    <table id="t01">
         <thead>
             <tr>
                 <th>NISN</th>
@@ -40,21 +57,15 @@
                 </tr>
             @empty
                 <tr>
-                    <td colspan="4" class="text-center">
+                    <td align="center">
                         Data Kosong
                     </td>
                 </tr>
             @endforelse
         </tbody>
     </table>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>
-
 {{-- <!DOCTYPE html>
 <html lang="en">
 <head>

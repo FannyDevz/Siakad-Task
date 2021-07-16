@@ -23,7 +23,16 @@
                         <form action="/absensiswa" method="POST">
                             {{ csrf_field() }}
                             <div class="form-group">
-                              <input type="text" class="form-control" name="note" placeholder="Catatan...">
+                                 <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                    <label class="input-group-text" for="note"><i class="fas fa-address-card"></i></label>
+                                    </div>
+                                    <select class="custom-select" name="note" {{$info['note']}}>
+                                    <option value="Hadir">Hadir</option>
+                                    <option value="Sakit">Sakit</option>
+                                    <option value="Izin">Izin</option>
+                                    </select>
+                                </div>
                             </div>
                             <button type="submit" class="btn btn-flat btn-primary" name="btnIn" {{$info['btnIn']}}>Absen Masuk</button>
                         </form>
